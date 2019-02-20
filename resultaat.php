@@ -7,27 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body id="all">
     <h1 class="logo">Mad Libs</h1>
     <ul>
         <li><a href="index.html">Er heerst paniek...</a></li>
         <li><a href="onkunde.html">Onkunde</a></li>
     </ul>
     <header>
-        <?php
-            $ = $ = $ = $ = "";
-            $huisdier = $persoon = $land = $vervelen = $speelgoed = $docent = $kopen = $bezigheid "";
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                if (empty($_POST["huisdier"])) {
-                    $huisdierError = "Vul hier iets in";
-                } else {
-                    $huisdier = test_input($_POST["huisdier"]);
-                if (!preg_match("/^[a-zA-Z ]*$/",$huisdier)) {
-                        $huisdierError = "Only letters and white space allowed"; 
-                    }
-                }
-            }
-        ?>
         <?php
             echo "<h2>Er heerst paniek...</h2><br>";
             echo "<i>Er heerst paniek in het koningkrijk "; echo $_POST["land"]; echo ". Koning "; echo $_POST["docent"]; echo " is ten einde raad en als koning "; echo $_POST["docent"]; echo " ten einde raad is, dan roept hij zijn ten-einde-raadsheer "; echo $_POST["persoon"]; echo ".</i><br><br>";

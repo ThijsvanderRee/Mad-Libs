@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body id="all">
     <h1 class="logo">Mad Libs</h1>
     <ul>
         <li><a href="index.html">Er heerst paniek...</a></li>
